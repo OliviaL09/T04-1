@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T04 – SVG House &amp; Garden</title>
+  <style>
+    body {
+      margin: 2rem;
+      background: #f4f7f2;
+      font-family: system-ui, sans-serif;
+    }
+
+    svg {
+      display: block;
+      width: min(100%, 800px);
+      height: auto;
+      border: 2px solid #526b58;
+      background: #dff3ff;
+    }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 800 500" role="img" aria-labelledby="scene-title scene-desc">
+    <title id="scene-title">T04 – SVG House &amp; Garden</title>
+    <desc id="scene-desc">
+      A sunny garden with a cloud, a tree, a small house with a chimney, door and two windows,
+      a fence, a curved garden path, and a caption.
+    </desc>
+
+    <!-- Sky and grass -->
+    <rect x="0" y="0" width="800" height="330" fill="#bde7ff" />
+    <rect x="0" y="330" width="800" height="170" fill="#8fca72" />
+
+    <!-- Sun and cloud -->
+    <circle cx="690" cy="85" r="42" fill="#ffd34e" />
+    <ellipse cx="145" cy="95" rx="48" ry="24" fill="#ffffff" />
+    <ellipse cx="180" cy="82" rx="35" ry="31" fill="#ffffff" />
+    <ellipse cx="215" cy="98" rx="42" ry="22" fill="#ffffff" />
+
+    <!-- Tree -->
+    <rect x="92" y="230" width="32" height="125" fill="#8b5a35" />
+    <circle cx="108" cy="205" r="54" fill="#4f9b55" />
+    <circle cx="72" cy="226" r="34" fill="#62ad5d" />
+    <circle cx="143" cy="225" r="37" fill="#62ad5d" />
+
+    <!-- House body, chimney, and roof -->
+    <rect x="300" y="220" width="250" height="165" fill="#f2c27b" stroke="#6f4932" stroke-width="3" />
+    <rect x="470" y="130" width="38" height="75" fill="#b85c45" stroke="#6f4932" stroke-width="3" />
+    <polygon points="275,225 425,115 575,225" fill="#b94e3f" stroke="#6f4932" stroke-width="4" />
+
+    <!-- Door and windows -->
+    <rect x="395" y="290" width="62" height="95" rx="3" fill="#76503b" stroke="#543a2b" stroke-width="3" />
+    <circle cx="445" cy="340" r="4" fill="#f6d66b" />
+    <rect x="322" y="250" width="52" height="48" fill="#aee4f5" stroke="#6f4932" stroke-width="3" />
+    <line x1="348" y1="250" x2="348" y2="298" stroke="#6f4932" stroke-width="3" />
+    <line x1="322" y1="274" x2="374" y2="274" stroke="#6f4932" stroke-width="3" />
+    <rect x="476" y="250" width="52" height="48" fill="#aee4f5" stroke="#6f4932" stroke-width="3" />
+    <line x1="502" y1="250" x2="502" y2="298" stroke="#6f4932" stroke-width="3" />
+    <line x1="476" y1="274" x2="528" y2="274" stroke="#6f4932" stroke-width="3" />
+
+    <!-- Fence -->
+    <polyline points="585,290 585,375 620,375 620,300 655,300 655,375 690,375 690,290 725,290 725,375 760,375 760,290"
+      fill="none" stroke="#f4e4bd" stroke-width="8" stroke-linejoin="round" />
+    <line x1="578" y1="325" x2="767" y2="325" stroke="#d3ad6b" stroke-width="7" />
+    <line x1="578" y1="360" x2="767" y2="360" stroke="#d3ad6b" stroke-width="7" />
+
+    <!-- Curved path -->
+    <path d="M 425 385 C 410 420, 455 438, 435 500 L 560 500 C 525 445, 490 415, 457 385 Z"
+      fill="#dfc596" stroke="#b99b68" stroke-width="3" />
+
+    <!-- Garden flowers -->
+    <line x1="225" y1="390" x2="225" y2="430" stroke="#3d7a43" stroke-width="4" />
+    <circle cx="225" cy="383" r="9" fill="#ef7184" />
+    <circle cx="215" cy="383" r="7" fill="#ffd34e" />
+    <circle cx="235" cy="383" r="7" fill="#ffd34e" />
+    <line x1="265" y1="400" x2="265" y2="435" stroke="#3d7a43" stroke-width="4" />
+    <circle cx="265" cy="393" r="9" fill="#a17be0" />
+
+    <!-- Caption -->
+    <text x="400" y="472" text-anchor="middle" fill="#35543a" font-size="22" font-weight="600">
+      Home in the garden
+    </text>
+  </svg>
+</body>
+</html>
